@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Protein Flavours & Boxes</title>
+  <link rel="stylesheet" href="cart.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Add to your cart.css */
+    .cart-content { max-width: 980px; margin: 20px auto; }
+    .cart-section { margin-bottom: 35px; }
+    .cart-products { display: flex; flex-wrap: wrap; gap: 24px; }
+    .cart-card { background: #f6fbfa; flex-basis: 46%; border-radius: 14px; box-shadow: 0 3px 12px #c7f6ed44; display: flex; padding: 16px; margin-bottom: 1em; }
+    .cart-card img { width: 140px; height: 140px; margin-right: 16px; border-radius: 9px; background: #fff; border: 1.5px solid #e3eeeb; }
+    .cart-card .desc { flex: 1; }
+    .product-title { font-size: 1.03rem; font-weight: 700; color: #2e646b; margin-bottom: 0.25em; }
+    .product-info { color: #444; font-size: 0.94rem; }
+    .protein-info { color: #27bda3; font-weight: 600; margin-left: 6px; }
+    .values { display: flex; align-items: center; gap: 12px; margin-top: 0.5em; }
+    .product-qty { width: 52px; padding: 0.2em; }
+    .product-total { font-weight: bold; margin-left: 12px; }
+    .add-to-cart-btn { background: #27bda3; color: #fff; border: none; border-radius: 6px; padding: 7px 18px; cursor: pointer; font-weight: 600; margin-left: 8px; }
+    #cart-float { position: fixed; top: 24px; right: 24px; background: #fff; border-radius: 10px; box-shadow: 0 4px 24px #95f0e8c2; z-index: 30; padding: 26px; min-width: 290px; max-width: 340px; }
+    #cart-float h3 { margin: 0 0 14px 0; font-size: 1.18rem; color: #184F52; }
+    .checkout-btn { background: #184F52; color: #fff; border: none; border-radius: 6px; padding: 10px 22px; font-size: 1rem; cursor: pointer; font-weight: 600; margin-top: 18px; }
+    .cart-empty { color: #8eb0af; text-align: center; margin: 17px 0; }
+  </style>
+</head>
+<body>
+
+<div class="cart-content">
+  <section class="cart-section">
+    <h2>Chocolate Flavour</h2>
+    <div class="cart-products">
+      <!-- Chocolate Sachet -->
+      <div class="cart-card" data-title="Chocolate Sachet" data-price="49.00">
+        <img src="images/generated-image (9).png" alt="Chocolate Sachet">
+        <div class="desc">
+          <div class="product-title">Chocolate Flavored Whey Protein Sachet</div>
+          <div class="product-info">Rich cocoa taste.<span class="protein-info">24g protein</span> per sachet.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">49.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Chocolate Box -->
+      <div class="cart-card" data-title="Chocolate Box" data-price="499.00">
+        <img src="images/generated-image (1).png" alt="Chocolate Box">
+        <div class="desc">
+          <div class="product-title">Chocolate Flavored Whey Protein Box</div>
+          <div class="product-info">Rich cocoa taste.<span class="protein-info">24g protein</span> per serving.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">499.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cart-section">
+    <h2>Vanilla Flavour</h2>
+    <div class="cart-products">
+      <div class="cart-card" data-title="Vanilla Sachet" data-price="49.00">
+        <img src="images/generated-image (10).png" alt="Vanilla Sachet">
+        <div class="desc">
+          <div class="product-title">Vanilla Flavored Whey Protein Sachet</div>
+          <div class="product-info">Classic vanilla flavor.<span class="protein-info">24g protein</span> per sachet.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">49.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-card" data-title="Vanilla Box" data-price="499.00">
+        <img src="images/vannila.png" alt="Vanilla Box">
+        <div class="desc">
+          <div class="product-title">Vanilla Flavored Whey Protein Box</div>
+          <div class="product-info">Classic vanilla flavor.<span class="protein-info">24g protein</span> per serving.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">499.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cart-section">
+    <h2>Strawberry Flavour</h2>
+    <div class="cart-products">
+      <div class="cart-card" data-title="Strawberry Sachet" data-price="49.00">
+        <img src="images/generated-image (11).png" alt="Strawberry Sachet">
+        <div class="desc">
+          <div class="product-title">Strawberry Flavored Whey Protein Sachet</div>
+          <div class="product-info">Sweet strawberry flavor.<span class="protein-info">24g protein</span> per sachet.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">49.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-card" data-title="Strawberry Box" data-price="499.00">
+        <img src="images/generated-image (2).png" alt="Strawberry Box">
+        <div class="desc">
+          <div class="product-title">Strawberry Flavored Whey Protein Box</div>
+          <div class="product-info">Sweet strawberry flavor.<span class="protein-info">24g protein</span> per serving.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">499.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cart-section">
+    <h2>Mango Flavour</h2>
+    <div class="cart-products">
+      <div class="cart-card" data-title="Mango Sachet" data-price="49.00">
+        <img src="images/generated-image (13).png" alt="Mango Sachet">
+        <div class="desc">
+          <div class="product-title">Mango Flavored Whey Protein Sachet</div>
+          <div class="product-info">Tropical mango flavor.<span class="protein-info">24g protein</span> per sachet.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">49.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-card" data-title="Mango Box" data-price="499.00">
+        <img src="images/generated-image.png" alt="Mango Box">
+        <div class="desc">
+          <div class="product-title">Mango Flavored Whey Protein Box</div>
+          <div class="product-info">Tropical mango flavor.<span class="protein-info">24g protein</span> per serving.</div>
+          <div class="values">
+            <input type="number" class="product-qty" value="0" min="0">
+            <span class="product-total">499.00</span>
+            <button class="add-to-cart-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Floating Cart Sidebar -->
+<div id="cart-float">
+  <h3>Your Cart</h3>
+  <div id="cart-summary"></div>
+  <button class="checkout-btn" onclick="goToCheckout()">Checkout</button>
+</div>
+
+<script>
+let cart = {};
+
+function updateCartDisplay() {
+  const summary = document.getElementById('cart-summary');
+  summary.innerHTML = '';
+  let total = 0;
+  if (Object.keys(cart).length === 0) {
+    summary.innerHTML = '<div class="cart-empty">No products selected.</div>';
+    document.querySelector('.checkout-btn').disabled = true;
+    return;
+  }
+  document.querySelector('.checkout-btn').disabled = false;
+  for (const title in cart) {
+    if (cart[title].qty > 0) {
+      summary.innerHTML += `<div>
+        ${title} &times; ${cart[title].qty}
+        - ₹${(cart[title].price * cart[title].qty).toFixed(2)}
+        <button onclick="removeFromCart('${title}')">Remove</button>
+      </div>`;
+      total += cart[title].price * cart[title].qty;
+    }
+  }
+  summary.innerHTML += `<hr><div><b>Total:</b> ₹${total.toFixed(2)}</div>`;
+}
+
+function removeFromCart(title) {
+  delete cart[title];
+  updateCartDisplay();
+}
+
+document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.cart-card');
+    const title = card.getAttribute('data-title');
+    const price = parseFloat(card.getAttribute('data-price'));
+    const qty = parseInt(card.querySelector('.product-qty').value, 10);
+    if (qty > 0) {
+      cart[title] = { qty, price };
+      updateCartDisplay();
+    }
+  });
+});
+
+function goToCheckout() {
+  localStorage.setItem('checkoutCart', JSON.stringify(cart));
+  window.location.href = 'checkout.html';
+}
+
+// Initial update on page load
+updateCartDisplay();
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  background: #f8f8fc;
+  color: #2d2d2d;
+  line-height: 1.75;
+}
+.cart-page {
+  max-width: 980px;
+  margin: 42px auto 38px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px #9ae1d822;
+  padding: 36px 44px 38px 44px;
+  min-height: 60vh;
+}
+h2 {
+  font-size: 1.7rem;
+  color: #184F52;
+  letter-spacing: 1px;
+  margin-top: 16px;
+  margin-bottom: 28px;
+  font-family: Montserrat, Arial, sans-serif;
+}
+.cart-products {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-bottom: 32px;
+}
+.cart-card {
+  background: #f6fbfa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #b2eee622;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 18px 22px;
+  transition: box-shadow 0.2s;
+}
+.cart-card:hover {
+  box-shadow: 0 4px 16px #27bda369;
+}
+.cart-card img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  border-radius: 9px;
+  background: #fff;
+  border: 1.5px solid #e3eeeb;
+  box-shadow: 0 2px 7px #b2eee683;
+}
+.cart-card .desc {
+  flex-grow: 1;
+  min-width: 170px;
+}
+.product-title {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #2e646b;
+  font-family: Montserrat, Arial, sans-serif;
+}
+.product-info {
+  font-size: 0.97rem;
+  color: #444;
+}
+.protein-info {
+  color: #27bda3;
+  font-weight: 600;
+}
+.remove-link {
+  color: #27bda3;
+  font-size: 0.97rem;
+  display: inline-block;
+  text-decoration: underline dotted;
+  margin-top: 0.3em;
+  cursor: pointer;
+  font-weight: 600;
+}
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 128px;
+}
+.product-total {
+  font-size: 1.08rem;
+  color: #302f4d;
+  background: #e9faec;
+  border-radius: 5px;
+  padding: 2.5px 13px;
+  font-weight: 700;
+  min-width: 89px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.product-qty {
+  width: 58px;
+  height: 34px;
+  font-size: 1.06rem;
+  border-radius: 6px;
+  border: 1.6px solid #c5e6da;
+  text-align: center;
+  margin: 0 0 6px 0;
+  background: #fff;
+  transition: border 0.15s;
+}
+.product-qty:focus {
+  border: 1.6px solid #27bda3;
+  outline: none;
+}
